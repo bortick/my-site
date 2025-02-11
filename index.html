@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Губеева Мария Екатериновна</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+        font-family: 'Open Sans', sans-serif; /* Более современный шрифт */
+    }
+    .jumbotron {
+        background-image: url(coding-bg.jpg); /* Замените на подходящее фоновое изображение */
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        padding: 120px 25px; /* Немного увеличим отступы */
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Добавим тень для текста */
+    }
+    .jumbotron h1 {
+        font-size: 3.5rem; /* Увеличим заголовок */
+        font-weight: 700; /* Сделаем жирнее */
+    }
+    .jumbotron p {
+        font-size: 1.5rem; /* Увеличим подзаголовок */
+    }
+    .portfolio-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; /* Скруглим углы изображений */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Добавим тень */
+    }
+     .portfolio-item{
+        margin-bottom: 30px;
+     }
+
+    .portfolio-item h3 {
+        font-size: 1.5rem; /* Увеличим заголовок проекта */
+        margin-top: 15px;
+        margin-bottom: 10px;
+        color: #343a40; /* Темно-серый цвет */
+    }
+      .portfolio-item p{
+       font-size: 1rem;
+       line-height: 1.4;
+    }
+    #about img {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Тень для фото */
+    }
+     #about h2, #portfolio h2, #contact h2 {
+        color: #343a40;
+        margin-bottom: 1rem;
+        font-size: 2.25rem; /* Немного увеличим */
+         font-weight: 700;
+    }
+    .btn-primary {
+        background-color: #007bff; /* Синий цвет (можно изменить) */
+        border-color: #007bff;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3; /* Темно-синий при наведении */
+        border-color: #0056b3;
+    }
+    .btn-outline-primary {
+       color: #007bff;
+        border-color: #007bff;
+     }
+
+    .btn-outline-primary:hover{
+        background-color: #007bff;
+        border-color: #007bff;
+        color: #fff;
+     }
+    .list-unstyled li a{
+       color: #007bff;
+     }
+    .form-control:focus {
+     border-color: #007bff;
+     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Губеева Мария</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Обо мне</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Портфолио</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron (Hero Section) -->
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Губеева Мария Екатериновна</h1>
+            <p class="lead">Frontend-разработчик</p>
+            <a class="btn btn-primary btn-lg" href="#contact" role="button">Связаться</a>
+        </div>
+    </header>
+
+    <!-- Секция "Обо мне" -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="kf.jpg" alt="Фото Марии Губеевой" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-lg-8">
+                    <h2>Обо мне</h2>
+                    <p>Я начинающий frontend-разработчик с большим энтузиазмом и желанием создавать красивые и удобные веб-интерфейсы.  Обладаю хорошими знаниями HTML, CSS и JavaScript, а также опытом работы с фреймворком Bootstrap.  В настоящее время активно изучаю React и стремлюсь к постоянному профессиональному росту.</p>
+                    <p>Мои сильные стороны включают в себя:</p>
+                    <ul>
+                        <li>Внимательность к деталям и аккуратность в коде.</li>
+                        <li>Умение работать в команде и находить общий язык с коллегами.</li>
+                        <li>Стремление к изучению новых технологий и подходов в разработке.</li>
+                        <li>Ответственность и нацеленность на результат.</li>
+                    </ul>
+                    <p>В свободное время увлекаюсь веб-дизайном, фотографией и путешествиями.</p>
+
+                    <a href="gubeeva-resume.pdf" class="btn btn-secondary" target="_blank">Скачать резюме</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Портфолио" -->
+    <section id="portfolio" class="bg-light py-5">
+        <div class="container">
+            <h2>Портфолио</h2>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="hdi.png" alt="Сайт-визитка" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Сайт-визитка</h3>
+                            <p class="card-text">Разработка простого сайта-визитки с использованием HTML, CSS и базового JavaScript.  Сайт содержит информацию о компании, контактные данные и форму обратной связи.</p>
+                            <a href="https://github.com/yourusername/project1" class="btn btn-outline-primary" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="ero.png" alt="Лендинг" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Лендинг продукта</h3>
+                            <p class="card-text">Создание одностраничного сайта для продвижения вымышленного продукта.  Использованы технологии HTML, CSS (с препроцессором SASS) и Bootstrap для адаптивной верстки.</p>
+                            <a href="https://github.com/yourusername/project2" class="btn btn-outline-primary" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+              <div class="col-md-4">
+               <div class="card">
+                <img src="uyt.png" alt="Интернет-магазин (прототип)" class="card-img-top">
+                 <div class="card-body">
+                   <h3 class="card-title">Интернет-магазин (прототип)</h3>
+                   <p class="card-text">Разработка прототипа главной страницы интернет-магазина с использованием HTML, CSS и JavaScript.  Реализована базовая функциональность, такая как каталог товаров и корзина.</p>
+                   <a href="https://github.com/yourusername/project3" class="btn btn-outline-primary" target="_blank">GitHub</a>
+                 </div>
+               </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Контакты" -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Буду рада ответить на ваши вопросы!</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope"></i> Email: <a href="mailto:m.gubeeva@example.com">m.gubeeva@example.com</a></li>
+                        <li><i class="fas fa-phone"></i> Телефон: <a href="tel:+79171234567">+7 (917) 123-45-67</a></li>
+                        <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/mariagubeeva/" target="_blank">linkedin.com/in/mariagubeeva</a></li>
+                        <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/mariagubeeva" target="_blank">github.com/mariagubeeva</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <form action="https://formspree.io/f/myformid" method="POST">  <!-- Замените myformid на ваш ID -->
+                        <div class="form-group">
+                            <label for="name">Имя:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="_replyto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение:</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал (Footer) -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Губеева Мария. Все права защищены.</p>
+    </footer>
+
+    <!-- Подключаем Bootstrap JS (jQuery и Popper.js обязательны), Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
